@@ -22,6 +22,9 @@ Easily change the furniture size and position with a visual guide
 <details>
   <summary> Render with Isometric View </summary>
 Easily render the scene with isometric view, with a single click, for both selected furniture or all furniture in the scene
+
+It will be automatically scale and position the camera to fit the furniture in the scene based on the placement size
+
 </details>
 
 <details>
