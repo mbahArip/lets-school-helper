@@ -18,7 +18,7 @@ For me, it's hard to place furniture in the game without visual guides how it wi
   <summary> Furniture Placement </summary>
 Easily change the furniture size and position with a visual guide  
 
-https://raw.githubusercontent.com/mbahArip/lets-school-helper/refs/heads/main/public/furniture-placement.mp4
+<video src="https://raw.githubusercontent.com/mbahArip/lets-school-helper/refs/heads/main/public/furniture-placement.mp4" controls />
 </details>
 
 <details>
