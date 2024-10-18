@@ -49,7 +49,7 @@ class OT_Open_Export_Path(bpy.types.Operator):
 
 class OT_Export_Selected_Collection(bpy.types.Operator):
   bl_idname = "lets_school_helper.export_selected_collection"
-  bl_label = "Export Selected"
+  bl_label = "Selected"
   bl_description = "Export the selected collection to the specified path"
 
   @classmethod
@@ -79,7 +79,7 @@ class OT_Export_Selected_Collection(bpy.types.Operator):
 
 class OT_Export_All_Collections(bpy.types.Operator):
   bl_idname = "lets_school_helper.export_all_collections"
-  bl_label = "Export All"
+  bl_label = "All"
   bl_description = "Export all collections to the specified path"
 
   @classmethod
@@ -126,7 +126,7 @@ class OT_Export_All_Collections(bpy.types.Operator):
 
 class OT_Render_Selected_Collection(bpy.types.Operator):
   bl_idname = "lets_school_helper.render_selected_collection"
-  bl_label = "Render Selected"
+  bl_label = "Selected"
   bl_description = "Render the selected collection to the specified path"
 
   @classmethod
@@ -191,7 +191,7 @@ class OT_Render_Selected_Collection(bpy.types.Operator):
 
 class OT_Render_All_Collections(bpy.types.Operator):
   bl_idname = "lets_school_helper.render_all_collections"
-  bl_label = "Render All"
+  bl_label = "All"
   bl_description = "Render all collections to the specified path"
 
   @classmethod
@@ -256,15 +256,17 @@ class VIEW3D_PT_Exporters_Panel(bpy.types.Panel):
     layout.label(text="Export Collection:")
 
     # Export button
-    col = layout.column()
-    col.scale_y = 1.5
-    col.operator(OT_Export_Selected_Collection.bl_idname, text=OT_Export_Selected_Collection.bl_label, icon="EXPORT")
-    col.operator(OT_Export_All_Collections.bl_idname, text=OT_Export_All_Collections.bl_label, icon="EXPORT")
+    row = layout.row()
+    row.scale_y = 1.5
+    row.operator(OT_Export_Selected_Collection.bl_idname, text=OT_Export_Selected_Collection.bl_label, icon="EXPORT")
+    row.operator(OT_Export_All_Collections.bl_idname, text=OT_Export_All_Collections.bl_label, icon="EXPORT")
 
-    col = layout.column()
-    col.scale_y = 1.5
-    col.operator(OT_Render_Selected_Collection.bl_idname, text=OT_Render_Selected_Collection.bl_label, icon="RENDER_STILL")
-    col.operator(OT_Render_All_Collections.bl_idname, text=OT_Render_All_Collections.bl_label, icon="RENDER_STILL")
+    layout.label(text="Render Collection:")
+
+    row = layout.row()
+    row.scale_y = 1.5
+    row.operator(OT_Render_Selected_Collection.bl_idname, text=OT_Render_Selected_Collection.bl_label, icon="RENDER_STILL")
+    row.operator(OT_Render_All_Collections.bl_idname, text=OT_Render_All_Collections.bl_label, icon="RENDER_STILL")
 
     col = layout.column(heading="Export Notes")
     col.label(text="Note:", icon="INFO")

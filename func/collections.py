@@ -1069,9 +1069,9 @@ class VIEW3D_PT_Placement_Panel(bpy.types.Panel):
 
       col.label(text=f"Current Size: {size_x}x{size_y}")
 
-      btn = col.column()
-      btn.scale_y = 1.5
-      btn.operator(OT_Render_Active.bl_idname, text=f"Render '{active_name}'", icon="RENDER_STILL")
+      # btn = col.column()
+      # btn.scale_y = 1.5
+      # btn.operator(OT_Render_Active.bl_idname, text=f"Render '{active_name}'", icon="RENDER_STILL")
 
       col = layout.column(align=True)
       col.alignment = "EXPAND"
