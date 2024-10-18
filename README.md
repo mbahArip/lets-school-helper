@@ -16,7 +16,9 @@ For me, it's hard to place furniture in the game without visual guides how it wi
 
 <details>
   <summary> Furniture Placement </summary>
-Easily change the furniture size and position with a visual guide
+Easily change the furniture size and position with a visual guide  
+
+https://raw.githubusercontent.com/mbahArip/lets-school-helper/refs/heads/main/public/furniture-placement.mp4
 </details>
 
 <details>
@@ -25,11 +27,18 @@ Easily render the scene with isometric view, with a single click, for both selec
 
 It will be automatically scale and position the camera to fit the furniture in the scene based on the placement size
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mbahArip/lets-school-helper/refs/heads/main/public/camera-01.png" alt="1x2 Camera" height=420 />
+  <img src="https://raw.githubusercontent.com/mbahArip/lets-school-helper/refs/heads/main/public/camera-02.png" alt="1x2 Camera" height=420 />
+</p>
 </details>
 
 <details>
   <summary> Easy Export </summary>
 Export selected furniture, or all furniture in the scene with a single click
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mbahArip/lets-school-helper/refs/heads/main/public/export.png" alt="1x2 Camera" height=420 />
+</p>
 </details>
 
 ## Installation
